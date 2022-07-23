@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  mywebsite:
+    build:
+      context: .
+      target: dev-container
+    volumes:
+      - ./:/app/:delegated
+    working_dir: /app/mywebsite
+    user: root
+    container_name: my_website
+    ports:
+      - "8000:8000"
+      - "8888:8888"
+    command: ash
+    cap_add:
+      - SYS_PTRACE
+
+  psql:
+    image: postgres:14-alpine
+    container_name: postgres
+    hostname: psql
+    environment:
+      - POSTGRES_PASSWORD=website
+      - POSTGRES_USER=website
+    networks:
+      - default
+    ports:
+      - "0.0.0.0:5432:5432/tcp"
+    volumes:
+      - db:/var/lib/postgresql/data

@@ -1,0 +1,76 @@
+[project]
+name = "My web Site"
+version = "1.0.0"
+description = "My personal website"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = []
+authors = [
+  {email = "arnaud.tsombeng@gmail.com"},
+  {name = "Arnaud Tsombeng"}
+]
+maintainers = [
+    {}
+]
+classifiers = [
+  "Development Status :: 1 - Alpha",
+  "Programming Language :: Python"
+]
+
+dependencies = [
+  "django>4.0; os_name != 'MacOs'",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest < 5.0.0",
+  "pytest-cov[all]"
+]
+
+[project.urls]
+homepage = "https://nkeumoarnaud.com"
+documentation = "https://nkeumoarnaud.com"
+repository = "https://github.com"
+changelog = "https://"
+
+[tool.pylint.MESSAGE_CONTROL]
+disable="""
+    bad-continuation,
+    no-else-return,
+    too-few-public-methods,
+    duplicate-code,
+    import-error,
+    no-self-use,
+    import-outside-toplevel,
+    ignore-docstrings,
+    F0401,
+    C0115,
+    fixme
+"""
+[tool.pylint.REPORTS]
+reports="no"
+
+[tool.pylint.FORMAT]
+max-line-length="120"
+
+[tool.pylint.BASIC]
+good-names="_,i,j,k,e,qs,pk,setUp,tearDown,maxDiff,default_app_config"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
