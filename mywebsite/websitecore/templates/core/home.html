@@ -1,11 +1,400 @@
-{% extends 'core/base.html' %}
 {% load static %}
-<!-- ======= Hero Section ======= -->
-{% block hero %}
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Arnaud Nkeumo</h1>
-      <p>I'm a<span class="typed" data-typed-items="Software Engineer, Developer, Freelancer, Father"></span></p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Arnaud Tsombeng</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'core/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'core/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Static CSS Files -->
+  <link href="{% static 'core/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'core/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'core/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'core/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.8.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="{% static 'core/img/profile-img.jpg' %}" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="/">Arnaud Tsombeng</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/ArnaudTsombeng" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://github.com/Nkarnaud" class="bi-github"><i></i></a>
+          <a href="https://www.upwork.com/freelancers/~01657677e4bf5df93c" class=""><i class="bx bxl-upwork"></i></a>
+          <a href="https://www.linkedin.com/in/tsombeng-nkeumo-arnaud-mathias-842ba18a/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="/" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
-  </section><!-- End Hero -->
-{% endblock %}
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+      <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+          <h1>Arnaud Tsombeng</h1>
+          <p>I'm a <span class="typed" data-typed-items="Backend Engineer, Frontend Developer, Freelancer, Father"></span></p>
+        </div>
+      </section><!-- End Hero -->
+
+  <main id="main">
+  <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I’m a software engineer. I’m skilled in serverless monolithic design, serverless microservices design, scaling,
+            and development of complex system. Am fan and evangelist of TDD. My tech stacks are python, Javascript, Django, Django Rest FrameworkFlask,
+            FastApi, Docker, Celery, RabbitMq, git, github, gitlab, postgresql, mysql, Redis cache, Amazon EC2, Amazon S3, Infrastructure as code with pulumi,. <br>  <br>  <br>
+
+            You can hire me for consulting, training or mentorship. <br> <br> <br>
+
+            MSc in computer science software engineer (working with the backend team) @ <a href="https://www.cloaked.app/" >Cloaked Inc</a> <br>
+
+            You can follow me on Twitter @<a href="https://twitter.com/ArnaudTsombeng">ArnaudTsombeng</a>
+          </p>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Arnaud Tsombeng</h4>
+              <p><em>Innovative and deadline-driven Developer with 2+ years of experience designing and engineering complex system.</em></p>
+              <ul>
+                <li>Yaounde Cameroon</li>
+                <li>+(237) 679 218 852</li>
+                <li>arnaud.tsombeng@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor degree in Computer science</h4>
+              <h5>2008 - 2011</h5>
+              <p><em>University of Yaounde 1</em></p>
+              <p></p>
+            </div>
+            <div class="resume-item">
+              <h4>Master of science in Computer science</h4>
+              <h5>2012 - 2014</h5>
+              <p><em>University of Yaounde 1</em></p>
+              <p></p>
+            </div>
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Network Engineer</h4>
+              <h5>2014 - 2017</h5>
+              <p><em>WorldVoice, Yaounde Cameroon </em></p>
+              <ul>
+                <li>Install and configured Company network</li>
+                <li>Connect other company to the network backbone</li>
+                <li>Setup hotspot and Radius server for administration</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item">
+              <h4>IT specialist</h4>
+              <h5>2017 - 2020</h5>
+              <p><em>Intelligentsia, Yaounde Cameroon </em></p>
+              <ul>
+                <li>Lead the IT team, Maintaining company network, support end users, and maintain company servers,</li>
+                <li>Support team member in installation and configuration of company network and servers, </li>
+                <li>Support end users and produce a monthly IT reports on IT trends.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>UpWork</h4>
+              <h5>2018 - 2021</h5>
+              <p><em>Remote Freelancing platform</em></p>
+              <ul>
+                <li>Provide Automation services to client,</li>
+                <li>Develop and maintain client backend,</li>
+                <li>Design and build client Rest api,</li>
+                <li>Integrate client platform with third party system. </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Cloaked Inc</h4>
+              <h5>2020 - present</h5>
+              <p><em>Lowell, Massachusetts, USA</em></p>
+              <ul>
+                <li>Work with the backend team In designing and developing APIs</li>
+                <li>Work with the Email team to engineer mailing services for cloaked users</li>
+                <li>Design and build data importing system for users migration from other platforms</li>
+                <li>Support frontend developer to integrate with backend services</li>
+                <li>Maintain and fix reported and bugs in the backend code base</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p></p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Blog</li>
+              <li data-filter=".filter-card">Projects</li>
+              <li data-filter=".filter-web">Talks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'core/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'core/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'core/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'core/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'core/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'core/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'core/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'core/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'core/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'core/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'core/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'core/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'core/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'core/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'core/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'core/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'core/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'core/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Yaounde Cameroon Rond point Express</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>arnaud.tsombeng@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+237 679 218 852</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.0061685779098!2d11.484088952273625!3d3.8355490056625055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf961f6dcffb%3A0xef82e99305ef03b!2sFirst%20Trust%20Bank%20Rond%20Point%20Express!5e0!3m2!1sen!2scm!4v1659195671213!5m2!1sen!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Arnaud Tsombeng</span></strong>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'core/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'core/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'core/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'core/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'core/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'core/vendor/typed.js/typed.min.js' %}"></script>
+  <script src="{% static 'core/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'core/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'core/js/main.js' %}"></script>
+
+</body>
+
+</html>

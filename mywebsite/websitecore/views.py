@@ -7,6 +7,7 @@ from django.views.generic.base import TemplateView
 class HomeTemplateView(TemplateView):
     template_name = 'core/home.html'
 
+    def get(self, request, *args, **kwargs):
+        context = self.get_context_data(**kwargs)
 
-class AboutTemplateView(TemplateView):
-    template_name = 'core/about.html'
+        return render(request, 'core/home.html', context=context)
