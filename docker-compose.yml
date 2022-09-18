@@ -28,5 +28,3 @@ services:
       - default
     ports:
       - "0.0.0.0:5432:5432/tcp"
-    volumes:
-      - db:/var/lib/postgresql/data
