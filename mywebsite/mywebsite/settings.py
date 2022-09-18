@@ -39,9 +39,7 @@ DEFAULT_APPS = [
     'django.contrib.staticfiles',
 ]
 
-LOCAL_APPS = [
-    'websitecore'
-]
+LOCAL_APPS = ['websitecore']
 
 INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS
 
