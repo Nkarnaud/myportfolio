@@ -41,7 +41,8 @@ DEFAULT_APPS = [
 
 LOCAL_APPS = ['websitecore']
 
-INSTALLED_APPS = DEFAULT_APPS + LOCAL_APPS
+
+INSTALLED_APPS = LOCAL_APPS + DEFAULT_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
