@@ -36,10 +36,10 @@ DEFAULT_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles'
 ]
 
-LOCAL_APPS = ['websitecore']
+LOCAL_APPS = ['websitecore.apps.WebsitecoreConfig']
 
 
 INSTALLED_APPS = LOCAL_APPS + DEFAULT_APPS
