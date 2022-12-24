@@ -2,8 +2,6 @@ FROM python:3.9-bullseye AS builder
 
 RUN useradd -ms /bin/bash pythonrunner
 
-# RUN addgroup -S pythonrunner && adduser -u 1000 -S -g pythonrunner pythonrunner
-
 WORKDIR /app
 
 RUN apt-get update && \
@@ -24,7 +22,6 @@ RUN pip3 install --no-cache-dir --user -r /tmp/requirements.txt
 
 FROM python:3.9-slim-bullseye AS prod-container
 
-# RUN addgroup -S pythonrunner && adduser -u 1000 -S -g pythonrunner pythonrunner
 
 RUN useradd -ms /bin/bash pythonrunner
 
@@ -33,11 +30,12 @@ RUN chown -R pythonrunner:pythonrunner /app
 
 RUN apt-get update && \
     apt-get install -y \
-    libpq-dev
+    libpq-dev \
+    libxml2
 
 COPY --chown=pythonrunner:pythonrunner --from=builder /home/pythonrunner/.local /usr/local
 COPY --chown=pythonrunner:pythonrunner mywebsite /app/
-COPY --chown=pythonrunner:pythonrunner uwsgi.ini /app
+COPY --chown=pythonrunner:pythonrunner uwsgi.ini /app/uwsgi.ini
 
 USER pythonrunner
 

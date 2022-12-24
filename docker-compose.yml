@@ -24,14 +24,14 @@ services:
     build:
       context: .
       target: prod-container
-    volumes:
-      - ./:/app/:delegated
+#    volumes:
+#      - ./mywebsite/static:/backend/static
     working_dir: /app/mywebsite
     user: root
     container_name: my_website
     ports:
       - "8000:8000"
-    command: bash
+    command: uwsgi --ini /app/uwsgi.ini
     networks:
       - default
 
