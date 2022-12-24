@@ -26,14 +26,14 @@ FROM python:3.9-slim-bullseye AS prod-container
 
 # RUN addgroup -S pythonrunner && adduser -u 1000 -S -g pythonrunner pythonrunner
 
+RUN useradd -ms /bin/bash pythonrunner
+
 WORKDIR /app
 RUN chown -R pythonrunner:pythonrunner /app
 
-RUN apk --no-cache add \
-    libpq \
-    libxml2 \
-    libxslt \
-    pcre
+RUN apt-get update && \
+    apt-get install -y \
+    libpq-dev
 
 COPY --chown=pythonrunner:pythonrunner --from=builder /home/pythonrunner/.local /usr/local
 COPY --chown=pythonrunner:pythonrunner mywebsite /app/
