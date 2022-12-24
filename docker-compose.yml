@@ -1,23 +1,23 @@
 version: "3.8"
 
 services:
-  mywebsite-dev:
-    hostname: mywebsite
-    build:
-      context: .
-      target: dev-container
-    volumes:
-      - ./:/app/:delegated
-    working_dir: /app/mywebsite
-    user: root
-    container_name: my_website
-    ports:
-      - "8000:8000"
-    command: runserver 0.0.0.0:8000
-    cap_add:
-      - SYS_PTRACE
-    networks:
-      - default
+#  mywebsite-dev:
+#    hostname: mywebsite
+#    build:
+#      context: .
+#      target: dev-container
+#    volumes:
+#      - ./:/app/:delegated
+#    working_dir: /app/mywebsite
+#    user: root
+#    container_name: my_website
+#    ports:
+#      - "8000:8000"
+#    command: runserver 0.0.0.0:8000
+#    cap_add:
+#      - SYS_PTRACE
+#    networks:
+#      - default
 
   mywebsite:
     hostname: mywebsite
