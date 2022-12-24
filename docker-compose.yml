@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   mywebsite:
+    hostname: mywebsite
     build:
       context: .
       target: dev-container
@@ -12,10 +13,27 @@ services:
     container_name: my_website
     ports:
       - "8000:8000"
-      - "8888:8888"
-    command: ash
+    command: runserver 0.0.0.0:8000
     cap_add:
       - SYS_PTRACE
+    networks:
+      - default
+
+  mywebsite-prod:
+    hostname: mywebsite
+    build:
+      context: .
+      target: prod-container
+    volumes:
+      - ./:/app/:delegated
+    working_dir: /app/mywebsite
+    user: root
+    container_name: my_website
+    ports:
+      - "8000:8000"
+    command: bash
+    networks:
+      - default
 
   psql:
     image: postgres:14-alpine
