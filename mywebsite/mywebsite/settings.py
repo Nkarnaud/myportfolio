@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a87t@mo8@b(=tpq8oltp)ifs^__091vd*83z8u47@9i3b2fj9i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jellyfish-app-hj428.ondigitalocean.app']
 
 
 # Application definition
