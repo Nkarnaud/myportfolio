@@ -42,19 +42,3 @@ USER pythonrunner
 EXPOSE 8000
 
 CMD ["uwsgi", "--ini", "/app/uwsgi.ini"]
-
-
-FROM builder AS dev-container
-
-USER root
-
-COPY requirements.txt /tmp/requirements.txt
-COPY requirements-dev.txt /tmp/requirements-dev.txt
-RUN pip install --no-cache-dir -r /tmp/requirements-dev.txt
-RUN cp -r /home/pythonrunner/.local/* /usr/local
-
-WORKDIR /app/mywebsite
-USER pythonrunner
-
-ENTRYPOINT ["python", "manage.py"]
-CMD ["runserver", "0.0.0.0:8000"]
